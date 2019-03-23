@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 23, 2019 at 01:35 PM
+-- Generation Time: Mar 23, 2019 at 03:18 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -15027,7 +15027,12 @@ INSERT INTO `shipment` (`serial`, `HAWB`, `origin`, `destination`, `media`, `AWB
 (16924, '101168 ', 'BANGLADESH', 'GERMANY', '1', '4064704851', '2019-03-12 16:07', 'MD.SHIPON AHAMED', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', '', 'KATASUR,(12/1,CHA) MOHAMMADPUR DHAKA-1207, BANGLADESH ', '01740301579', 'zamanwebdeveloper@gmail.com', 'GIRONDELLE 80, D-44799 BOCHUM, GERMANY ', '2019-02-12', '101168', 'Syed Zaman', 'Bangladesh', '01pcs', '0.500gm', 'Product Description Here'),
 (16925, '100000', 'BANGLADESH', 'GERMANY', '1', '4064704873', '2019-03-23 13:59', 'MD.SHIPON AHAMED ', 'FACHHOCHSCHUL KIEL ', 1, 'SHIPMENT PICK UP ', '+8801794603460', 'zamanwebdeveloper@gmail.com', '', '+494312104830', 'zamanwebdeveloper@gmail.com', '', '2019-03-23', '101167', 'Karim', 'DHAKA, BANGLADESH', '01pcs', '0.600gm', 'Pro Description'),
 (16926, '2234112', 'BANGLADESH', 'GERMANY', '3', '2234112', '2019-03-23 15:06', 'MD.SHIPON AHAMED ', 'RAHMAN MD ATAUR ', 1, 'Pending', '+8801794603460', 'zamanwebdeveloper@gmail.com', '', '+8108058289550', 'zamanwebdeveloper@gmail.com', '', '2019-03-23', '813039694377', 'Syed Zaman', 'Bangladesh', '01pcs', '0.200gm', 'Product Description'),
-(16927, '774433889', 'BANGLADESH', 'GERMANY', '10', '813039694377', '2019-03-23 15:34', 'MD.SHIPON AHAMED ', 'MR. JOHIRUL ISLAM', 1, 'Shipment Pick Up', '+8801794603460', 'zamanwebdeveloper@gmail.com', '', '01740301579', 'zamanwebdeveloper@gmail.com', '', '2019-03-23', '123456', 'Karim', 'Bangladesh', '01pcs', '0.500gm', 'Product');
+(16927, '774433889', 'Dhaka - BANGLADESH', 'Hong Kong', '15', '080059142214', '2019-03-23 20:06', 'MD.SHIPON AHAMED ', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '112233', 'Rahim', 'Bangladesh', '01pcs', '0.500gm', ''),
+(16929, '2054656', 'Dhaka - BANGLADESH', 'Hong Kong', '8', '212000014841', '2019-03-23 20:05', 'MD.SHIPON AHAMED ', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '300000', 'Karim', 'DHAKA, BANGLADESH', '01pcs', '0.200gm', 'Important Files'),
+(16930, '774433889', 'Dhaka - BANGLADESH', 'Hong Kong', '15', '080059142214', '2019-03-23 20:06', 'MD.SHIPON AHAMED ', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '112233', 'Rahim', 'Bangladesh', '01pcs', '0.500gm', ''),
+(16931, '2234112', 'Dhaka - BANGLADESH', 'GERMANY', '3', '813039694377', '2019-03-23 20:07', 'MD.SHIPON AHAMED ', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+8108058289550', 'ruhur@gmail.com', '', '2019-03-23', '101167', 'Karim', 'Bangladesh', '01pcs', '0.500gm', ''),
+(16932, '2054708  ', 'Dhaka - BANGLADESH', 'Hong Kong', '10', '2054708', '2019-03-23 20:08', 'MD. ABDUL MOBIN ', 'RUHR UNIVERSITY BOCH', 1, 'SHIPMENT PICK UP ', 'ABDUL@gmail.com', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '101167', 'Karim', 'Bangladesh', '01pcs', '0.600gm', ''),
+(16933, '2054369', 'Dhaka - BANGLADESH', 'GERMANY', '13', '3541228270', '2019-03-23 20:10', 'MD.SHIPON AHAMED', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '112233', 'Rahim', 'Bangladesh', '01pcs', '0.600gm', 'Product Description is Here');
 
 -- --------------------------------------------------------
 
@@ -15776,7 +15781,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `shipment`
 --
 ALTER TABLE `shipment`
-  MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16928;
+  MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16934;
 
 --
 -- AUTO_INCREMENT for table `shipment_dom`
