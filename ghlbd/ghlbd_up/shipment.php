@@ -433,7 +433,7 @@ $panme=mysql_fetch_array($res);
 		else if($currmedia==3)
 		{
 			
-			$goto="https://www.fedex.com/apps/fedextrack/?action=track&trackingnumber=813039694377&cntry_code=us&locale=en_US";		
+			$goto="https://www.fedex.com/us/fedextracking/";		
 			//$goto="http://www.fedex.com/Tracking?tracknumbers=".$awb."&action=track&language=english&ctry_code=be&mps=y&ascend_header=1&imageField=Track";		
 		}
 		else if($currmedia==4)
