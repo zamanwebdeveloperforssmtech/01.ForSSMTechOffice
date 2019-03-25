@@ -1,4 +1,0 @@
-[10-Mar-2019 17:15:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ghlbd/public_html/index.php:3) in /home/ghlbd/public_html/wp-includes/functions.php on line 2772
-[10-Mar-2019 18:27:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ghlbd/public_html/index.php:3) in /home/ghlbd/public_html/wp-includes/pluggable.php on line 875
-[10-Mar-2019 19:25:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ghlbd/public_html/index.php:3) in /home/ghlbd/public_html/wp-includes/pluggable.php on line 875
-[11-Mar-2019 08:17:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ghlbd/public_html/index.php:3) in /home/ghlbd/public_html/wp-includes/pluggable.php on line 875

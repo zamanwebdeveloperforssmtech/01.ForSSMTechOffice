@@ -1,7 +1,7 @@
 <p align="center">Please wait loading...</p>
 <div style="display:none">
 		
-<form name="form1" action="http://www.dpex.com/trackenq_general.asp?" method="post">
+<form name="form1" action="https://dpex.com/track-and-trace?" method="post">
                   <td align="right">
                       <table width="187" border="0" cellspacing="0" cellpadding="0">
                         <tr>

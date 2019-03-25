@@ -288,10 +288,10 @@ $panme=mysql_fetch_array($res);
     <td width="15%" align="right"><strong>Booking Date</strong></td>
      <td width="2%"><strong>:</strong></td>
 
-    <td width="34%"><?php echo $row['pdate'];?></td>
+    <td width="34%"><?php //echo $row['pdate'];?></td>
     <td width="15%" align="right"><strong>Contents</strong></td>
       <td width="2%"><strong>:</strong></td>
-    <td ><?php echo $panme['p_name'];?></td>
+    <td ><?php //echo $panme['p_name'];?></td>
   </tr>-->
   
   <tr class="paging"> 
@@ -345,7 +345,7 @@ $panme=mysql_fetch_array($res);
     <!--
     <td width="15%" align="right"><strong>Agent Name</strong></td>
     <td width="2%"><strong>:</strong></td>
-    <td ><?php echo $row['agentname'];?></td>
+    <td ><?php //echo $row['agentname'];?></td>
     -->
   </tr>
    <tr class="paging"> 
@@ -378,11 +378,6 @@ $panme=mysql_fetch_array($res);
     <td ><?php //echo $row['remail'];?></td>
   </tr>
   -->
-   
-
-    
-  
-   
  
 </table>
 	
@@ -421,101 +416,94 @@ $panme=mysql_fetch_array($res);
 <?php 
 	$sql="select * from shipment where serial= '$serial'";
 	$res=connect($sql);
-while($id=mysql_fetch_array($res))
-{
-	$currmedia=$id['media'];
-	$awb=$id['AWB'];
-	$hawb=$id['HAWB'];
-	if($currmedia==1)
+	while($id=mysql_fetch_array($res))
 	{
-		//$goto="http://www.dhl.co.ae/publish/ae/en/eshipping/track.high.html?pageToInclude=RESULT&AWB=".$awb."&type=fasttrack";	
-		$goto="http://www.dhl.co.ae/publish/ae/en/eshipping/track.high.html?pageToInclude=RESULTS&AWB=".$awb."&type=fasttrack&awb_hidden=".$awb."";
-	}
-	else if($currmedia==2)
-	{
-		$goto="tntsearch.php?cons=".$awb;
-	}
-	else if($currmedia==3)
-	{
-		$goto="http://www.fedex.com/Tracking?tracknumbers=".$awb."&action=track&language=english&ctry_code=be&mps=y&ascend_header=1&imageField=Track";		
-	}
-	else if($currmedia==4)
-	{
-		$goto="https://webcsw.ocs.co.jp/csw/ECSWG0201R00003P.do?cwbno=".$awb;
-		//$goto="ocssearch.php?AWBNo=".$awb;
-	}
-	else if($currmedia==5)
-	{
-		$goto="http://www.firstflight.net/track.asp?txtcon_no=".$awb;
-	}
-	else if($currmedia==6)
-	{
-		$goto="fardarsearch.php?AWBNo=".$awb;
-	}
-	else if($currmedia==16)
-	{
-		$goto="fastPostbd.php?AWBNo=".$awb;
-	}
-	else if($currmedia==7)
-	{
-		//$goto="http://www.aramex.com/Post/track_results_multiple.aspx?ShipmentNumber=".$awb;
-                $goto="http://www.aramex.com";   
-	   //$goto="http://www.aramex.com/Post/track_results.aspx?q=".$awb;
-	   //$goto="http://www.aramex.com/express/track_results.aspx";
-
-		
-	}
+		$currmedia=$id['media'];
+		$awb=$id['AWB'];
+		$hawb=$id['HAWB'];
+		if($currmedia==1)
+		{
+			//$goto="http://www.dhl.co.ae/publish/ae/en/eshipping/track.high.html?pageToInclude=RESULT&AWB=".$awb."&type=fasttrack";	
+			$goto="http://www.dhl.co.ae/publish/ae/en/eshipping/track.high.html?pageToInclude=RESULTS&AWB=".$awb."&type=fasttrack&awb_hidden=".$awb."";
+		}
+		else if($currmedia==2)
+		{
+			$goto="tntsearch.php?cons=".$awb;
+		}
+		else if($currmedia==3)
+		{
+			
+			$goto="https://www.fedex.com/us/fedextracking/?tracknumbers=".$awb."&action=track&language=english&ctry_code=be&mps=y&ascend_header=1&imageField=Track";		
 	
-	else if($currmedia==8)
-	{
-		$goto="dpexserarch.php?txtConnote=".$hawb;
-		
+			//$goto="http://www.fedex.com/Tracking?tracknumbers=".$awb."&action=track&language=english&ctry_code=be&mps=y&ascend_header=1&imageField=Track";		
+		}
+		else if($currmedia==4)
+		{
+			$goto="https://webcsw.ocs.co.jp/csw/ECSWG0201R00003P.do?cwbno=".$awb."";
+			//$goto="ocssearch.php?AWBNo=".$awb;
+		}
+		else if($currmedia==5)
+		{
+			$goto="http://www.firstflight.net/track.asp?txtcon_no=".$awb;
+		}
+		else if($currmedia==6)
+		{
+			$goto="fardarsearch.php?AWBNo=".$awb;
+		}
+		else if($currmedia==7)
+		{
+			//$goto="http://www.aramex.com/Post/track_results_multiple.aspx?ShipmentNumber=".$awb;
+	                $goto="http://www.aramex.com";   
+		   //$goto="http://www.aramex.com/Post/track_results.aspx?q=".$awb;
+		   //$goto="http://www.aramex.com/express/track_results.aspx";	
+		}
+		else if($currmedia==8)
+		{
+			$goto="dpexserarch.php?txtConnote=".$hawb;	
+		}
+		else if($currmedia==9)
+		{
+			$goto="http://www.tcs.com.pk/ae/tracking/TrackShipmentResults.aspx?TrackNo=".$awb;
+		}
+		else if($currmedia==10 )
+		{
+			$goto="http://www.niceexpress.net";
+		}
+		else if($currmedia==11)
+		{
+			$goto="http://www.parcelforce.com/track-trace?trackNumber=".$awb;
+		}
+		else if($currmedia==13)
+		{
+			$goto="https://my.gdexpress.com/";
+		}
+		else if($currmedia==14)
+		{
+			$goto="upssearch.php?sid=".$awb;
+		}
+		else if($currmedia==15)
+		{
+			$goto="http://www.sf-express.com/cn/en/dynamic_function/waybill/#search/bill-number/" . $awb;
+		}
+		else if($currmedia==16)
+		{
+			$goto="fastPostbd.php?AWBNo=".$awb;
+		}
+		else
+		{
+		$goto="empty.php";
+		}
 	}
-	
-	else if($currmedia==9)
-	{
-		$goto="http://www.tcs.com.pk/ae/tracking/TrackShipmentResults.aspx?TrackNo=".$awb;
-	}
-	else if($currmedia==14)
-	{
-		$goto="upssearch.php?sid=".$awb;
-	}
-	else if($currmedia==11)
-	{
-		$goto="http://www.parcelforce.com/track-trace?trackNumber=".$awb;
-	}
-	else if($currmedia==15)
-	{
-		$goto="http://www.pafex.com/tracking.asp?action=track&language=english&cntry_code=in&mps=y&ascend_header=1&tracknumbers=" . $awb;
-	}
-	else
-	{
-	$goto="empty.php";
-	}
-
-}
 ?>
 <iframe align="middle" src="<?php echo $goto; ?>" height="900" width="100%" name="buffer" id="buffer"  vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="yes" style="z-index:1"><strong><center>Your Browser does not support iframe. Please use ie 6.0 or higher.</center></strong></iframe>
+
+
 </td>
 </tr>
 </table><br><br>
 <?php
 }
 ?>
-      
-    
-      
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
 	  
     </div>

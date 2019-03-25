@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 23, 2019 at 09:05 AM
+-- Generation Time: Mar 23, 2019 at 03:18 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -9176,7 +9176,9 @@ INSERT INTO `media` (`m_id`, `media_name`) VALUES
 (15, 'SF'),
 (16, 'Fast ExpressBD'),
 (17, 'Blue Dart'),
-(18, 'DTDC');
+(18, 'DTDC'),
+(10, 'Ref'),
+(13, 'GDEx');
 
 -- --------------------------------------------------------
 
@@ -15023,7 +15025,14 @@ INSERT INTO `shipment` (`serial`, `HAWB`, `origin`, `destination`, `media`, `AWB
 (16922, '101166', 'BANGLADESH', 'CANADA', '1', '5744209472', '2019-03-07 11:58', 'MAHBUBA FERDOUS ', 'MORSHED SIKDER ', 1, 'Shipment Pick Up', '+8801770511871', '', '62/E SYED GIASUDDIN RESIDENTIL ARIA,DHAKA-1000, BANGLADESH ', '+416 848 5650 ', '', '75 WELDRICK ROAD EAST,UNIT#847, RICHMOND HILL, ONL4COH9,CANADA.\r\n', '2019-03-12', '101166', '', 'Bangladesh', '01pcs', '0.200gm', ''),
 (16923, '101167', 'BANGLADESH', 'GERMANY', '1', '4064704873', '2019-03-07 15:58', 'MD.SHIPON AHAMED ', 'FACHHOCHSCHUL KIEL ', 1, 'Shipment Pick Up', '+8801794603460', 'zamanwebdeveloper@gmail.com', 'KATASUR,(12/1,CHA) MOHAMMADPUR DHAKA-1207, BANGLADESH ', '+494312104830', '', 'STUDIENKOLLEG FACHHOCHSCHUL KIEL,SOKRATESPLATZ 4, 24149 KIEL, GERMANY \r\n', '2019-03-12', '101167', '', 'Bangladesh', '01pcs', '0.600gm', 'Product Description Here'),
 (16924, '101168 ', 'BANGLADESH', 'GERMANY', '1', '4064704851', '2019-03-12 16:07', 'MD.SHIPON AHAMED', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', '', 'KATASUR,(12/1,CHA) MOHAMMADPUR DHAKA-1207, BANGLADESH ', '01740301579', 'zamanwebdeveloper@gmail.com', 'GIRONDELLE 80, D-44799 BOCHUM, GERMANY ', '2019-02-12', '101168', 'Syed Zaman', 'Bangladesh', '01pcs', '0.500gm', 'Product Description Here'),
-(16925, '100000', 'BANGLADESH', 'GERMANY', '1', '4064704873', '2019-03-23 13:59', 'MD.SHIPON AHAMED ', 'FACHHOCHSCHUL KIEL ', 1, 'SHIPMENT PICK UP ', '+8801794603460', 'zamanwebdeveloper@gmail.com', '', '+494312104830', 'zamanwebdeveloper@gmail.com', '', '2019-03-23', '101167', 'Karim', 'DHAKA, BANGLADESH', '01pcs', '0.600gm', 'Pro Description');
+(16925, '100000', 'BANGLADESH', 'GERMANY', '1', '4064704873', '2019-03-23 13:59', 'MD.SHIPON AHAMED ', 'FACHHOCHSCHUL KIEL ', 1, 'SHIPMENT PICK UP ', '+8801794603460', 'zamanwebdeveloper@gmail.com', '', '+494312104830', 'zamanwebdeveloper@gmail.com', '', '2019-03-23', '101167', 'Karim', 'DHAKA, BANGLADESH', '01pcs', '0.600gm', 'Pro Description'),
+(16926, '2234112', 'BANGLADESH', 'GERMANY', '3', '2234112', '2019-03-23 15:06', 'MD.SHIPON AHAMED ', 'RAHMAN MD ATAUR ', 1, 'Pending', '+8801794603460', 'zamanwebdeveloper@gmail.com', '', '+8108058289550', 'zamanwebdeveloper@gmail.com', '', '2019-03-23', '813039694377', 'Syed Zaman', 'Bangladesh', '01pcs', '0.200gm', 'Product Description'),
+(16927, '774433889', 'Dhaka - BANGLADESH', 'Hong Kong', '15', '080059142214', '2019-03-23 20:06', 'MD.SHIPON AHAMED ', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '112233', 'Rahim', 'Bangladesh', '01pcs', '0.500gm', ''),
+(16929, '2054656', 'Dhaka - BANGLADESH', 'Hong Kong', '8', '212000014841', '2019-03-23 20:05', 'MD.SHIPON AHAMED ', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '300000', 'Karim', 'DHAKA, BANGLADESH', '01pcs', '0.200gm', 'Important Files'),
+(16930, '774433889', 'Dhaka - BANGLADESH', 'Hong Kong', '15', '080059142214', '2019-03-23 20:06', 'MD.SHIPON AHAMED ', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '112233', 'Rahim', 'Bangladesh', '01pcs', '0.500gm', ''),
+(16931, '2234112', 'Dhaka - BANGLADESH', 'GERMANY', '3', '813039694377', '2019-03-23 20:07', 'MD.SHIPON AHAMED ', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+8108058289550', 'ruhur@gmail.com', '', '2019-03-23', '101167', 'Karim', 'Bangladesh', '01pcs', '0.500gm', ''),
+(16932, '2054708  ', 'Dhaka - BANGLADESH', 'Hong Kong', '10', '2054708', '2019-03-23 20:08', 'MD. ABDUL MOBIN ', 'RUHR UNIVERSITY BOCH', 1, 'SHIPMENT PICK UP ', 'ABDUL@gmail.com', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '101167', 'Karim', 'Bangladesh', '01pcs', '0.600gm', ''),
+(16933, '2054369', 'Dhaka - BANGLADESH', 'GERMANY', '13', '3541228270', '2019-03-23 20:10', 'MD.SHIPON AHAMED', 'RUHR UNIVERSITY BOCH', 1, 'Shipment Pick Up', '+8801794603460', 'shipon@gmail.com', '', '+494312104830', 'ruhur@gmail.com', '', '2019-03-23', '112233', 'Rahim', 'Bangladesh', '01pcs', '0.600gm', 'Product Description is Here');
 
 -- --------------------------------------------------------
 
@@ -15630,7 +15639,9 @@ INSERT INTO `tracking` (`serial`, `sid`, `activity`, `location`, `pdate`, `end_s
 (851, '16923', 'Delivered', 'Bangladesh', '2019-03-12 17:14', ''),
 (852, '16924', 'Delivered', 'Bangladesh', '2019-03-14 11:00', 'sdlfjdsl'),
 (853, '16925', 'Pending', 'Bangladesh', '2019-03-23 14:01', ''),
-(854, '16921', 'Pending', 'Bangladesh', '2019-03-23 14:04', '');
+(854, '16921', 'Pending', 'Bangladesh', '2019-03-23 14:04', ''),
+(855, '16926', 'Pending', 'Bangladesh', '2019-03-23 15:13', ''),
+(856, '16927', 'Pending', 'Bangladesh', '2019-03-23 16:29', '');
 
 -- --------------------------------------------------------
 
@@ -15770,7 +15781,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `shipment`
 --
 ALTER TABLE `shipment`
-  MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16926;
+  MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16934;
 
 --
 -- AUTO_INCREMENT for table `shipment_dom`
@@ -15782,7 +15793,7 @@ ALTER TABLE `shipment_dom`
 -- AUTO_INCREMENT for table `tracking`
 --
 ALTER TABLE `tracking`
-  MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=855;
+  MODIFY `serial` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=857;
 
 --
 -- AUTO_INCREMENT for table `tracking_dom`
